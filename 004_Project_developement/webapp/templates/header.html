@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="header_style.css"> -->
+    <style>
+        header {
+            background-color: black;
+            width: 100vw;
+            margin: 0px;
+            
+        }
+
+        .header_ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .header_ul li {
+            margin: 30px;
+            margin-top: 10px;
+            font-size: large;
+        }
+
+        .header_ul a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .header_ul a:hover {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul class="header_ul">
+            <li><a href="{{url_for('index')}}">Home</a></li>
+            <li><a href="{{url_for('about')}}">About</a></li>
+            <li><a href="{{url_for('contact')}}">Contact</a></li>
+        </ul>
+    </header>
+</body>
+
+</html>

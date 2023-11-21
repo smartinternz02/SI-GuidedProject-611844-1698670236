@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("header").load("{{url_for('header')}}");
+        });
+    </script>
+    <style>
+        .container{
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <div class="container">
+        <div class="dog_images">
+            <img src="/static/dog images.png" alt="">
+        </div>
+        <div class="info">
+            <ul>
+                <li>
+                    <h3>Data predicition</h3>
+                    <p>
+                        The first step is to prepare the data for the CNN. This involves obtaining and cleaning the data, splitting it into training, validation, and testing sets, and performing any necessary transformations or augmentations
+                    </p>
+                </li>
+
+                <li>
+                    <h3>Model building</h3>
+                    <p>
+                        The second step is to build the CNN model using the VGG19 architecture. This involves initializing the VGG19 model and modifying it for the specific classification task, typically by adding a few fully connected layers and an output layer. The model is then compiled with an appropriate loss function, optimizer, and evaluation metrics.
+                    </p>
+                </li>
+
+                <li>
+                    <h3>Model Training & Evaluation</h3>
+                    <p>
+                        The third step is to train the model on the training data using the fit() method. During training, the model is presented with batches of training data, and the weights are updated to minimize the loss function
+                    </p>
+                </li>
+
+                <li>
+                    <h3>Model Deployment</h3>
+                    <p>
+                        The final step after Model Training & Deploymnet involves deploying the model so that it can be used in real-world applications.
+                    </p>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

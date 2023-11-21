@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        * {
+            background-color: black;
+            color: white;
+        }
+
+        .form_div {
+            width: 100vw;
+            /* border: 1px solid red; */
+            height: 50vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+        }
+
+        #submit_btn {
+            color: white;
+            /* background-color: white; */
+            width: 10vw;
+            height: 8vh;
+            border-radius: 10px;
+            border: 1px solid white;
+        }
+
+        .submit_btn_div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px;
+            font-size: larger;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("header").load("{{url_for('header')}}");
+        });
+    </script>
+</head>
+
+<body>
+    <!-- <h1>Hello how are you</h1> -->
+    <header></header>
+    <img src="/static/Background_Image.png" alt="" width="100%">
+
+    <h1 style="text-align:center;">Prediction Form</h1>
+    <div class="form_div">
+        <form action="{{url_for('output')}}" method="post" enctype="multipart/form-data">
+            <label for="img" id="img_label">Select image of the dog:</label>
+            <input type="file" id="img" name="img" accept="image/*">
+            <div class="submit_btn_div">
+                <button type="submit" id="submit_btn">Submit</button>
+            </div>
+        </form>
+    </div> <!--form_div-->
+</body>
+
+</html>
