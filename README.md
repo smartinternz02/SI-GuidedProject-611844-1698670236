@@ -9,7 +9,7 @@
 - Abhijeet Bhardwaj
 - Sparsh Maheswari
 - Sarv Sandilya
-- Animesh Verms
+- Animesh Verma
 
 ### Project Brief:
 
@@ -24,7 +24,7 @@ This project aims to develop a machine learning model that accurately identifies
 - [Brain Storming](./001_Ideation-Phase//Brain%20Storming/)
 - [EmpathyMap](./001_Ideation-Phase/Empathy%20map%20canvas/)
 
-### Pahse - 2
+### Phase - 2
 
 - [Dataflow Diagram](./002_Project_Design/Data%20Flow%20Diagram%20and%20User%20Stories.pdf)
 - [Proposed Solution](./002_Project_Design/Proposed%20Solution.pdf)
