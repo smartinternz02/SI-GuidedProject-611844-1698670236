@@ -40,6 +40,11 @@ This project aims to develop a machine learning model that accurately identifies
 - [Notebook](./004_Project_developement/dog_breed_model.ipynb)
 - [WebApp](./004_Project_developement/webapp/)
 
+### Project Assets
+
+- [Demo Video](https://drive.google.com/file/d/1uuNI84WWISX1sdBGi2x3aA0OlQnbATRs/view?usp=drive_link)
+- [Document](./assets/Project%20Report%20Final.pdf)
+
 ---
 
 Thanks :)
